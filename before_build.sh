@@ -16,6 +16,7 @@ git clone https://github.com/tty228/luci-app-serverchan package/mine/luci-app-se
 
 # 硬盘监控
 git clone https://github.com/project-openwrt/luci-app-smartinfo package/mine/luci-app-smartinfo
+mv package/mine/luci-app-smartinfo/luci-dir/applications/luci-app-smartinfo package/mine/luci-app-smartinfo/
 
 # FileBrowser
 git clone https://github.com/project-openwrt/FileBrowser package/mine/FileBrowser
