@@ -22,8 +22,29 @@ msgstr "开启 Flow Offloading 转发加速. (降低CPU占用 / 增强路由转�
 msgid "Enable Hardware NAT (depends on hw capability like MTK 762x)"
 msgstr "启用硬件HWNAT加速（依赖特定的硬件，例如 MTK 762x 系列）"
 
+msgid "CUBIC"
+msgstr "CUBIC"
+
+msgid "BBR"
+msgstr "BBR"
+
 msgid "Enable BBR"
 msgstr "启用 BBR"
+
+msgid "TCP Congestion Control Algorithm"
+msgstr "TCP拥塞控制算法"
+
+msgid "BBR_mod"
+msgstr "魔改BBR"
+
+msgid "bbr_bbrplus"
+msgstr "BBR plus"
+
+msgid "bbr_tsunami"
+msgstr "魔改BBR Yankee版"
+
+msgid "bbr_nanqinlang"
+msgstr "魔改BBR 南琴浪版"
 
 msgid "Bottleneck Bandwidth and Round-trip propagation time (BBR)"
 msgstr "BBR拥塞控制算法可以加强TCP应用表现，但会降低路由器本机上的WIFI吞吐性能"
@@ -64,11 +85,17 @@ msgstr "启用dnsmasq去广告"
 msgid "dnsmasq killqqad"
 msgstr "dnsmasq去广告"
 
-msgid "AdGuardHome's login username/passwd: AdGuardHome, web console addr: IP:3001"
-msgstr "AdGuardHome 网页控制台地址：IP:3001 登录账号/密码：AdGuardHome"
+msgid "AdGuardHome After setting up, shut down DNS acceleration normally and save configuration file"
+msgstr "AdGuardHome设置完后正常关闭dns加速即可保存配置文件.AdGuardHome管理页面IP:3333 管理账号密码：AdGuardHome"
 
 msgid "Filter AAAA"
 msgstr "忽略域名的IPv6地址"
 
 msgid "Dnsmasq rejects IPv6 parsing and optimizes domestic complex dual-stack network"
-msgstr "dnsmasq不返回ipv6解析结果，优化国内复杂双栈网络"
+msgstr "dnsmasq不返回ipv6解析结果,优化国内复杂双栈网络"
+
+msgid "Memory mode operation"
+msgstr "内存模式运行"
+
+msgid "Automatic Free Memory"
+msgstr "自动释放内存"
