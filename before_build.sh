@@ -32,7 +32,7 @@ git clone https://github.com/Ameykyl/my.git package/mine/luci-app-ssr-plus-jo/my
 git clone https://github.com/project-openwrt/FileBrowser package/mine/FileBrowser
 
 # 网易云音乐
-git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic package/mine/luci-app-unblockneteasemusic
+git clone https://github.com/RealKiro/luci-app-unblockneteasemusic.git package/mine/luci-app-unblockneteasemusic
 
 # 网易云音乐mini
 git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-mini package/mine/luci-app-unblockneteasemusic-mini
