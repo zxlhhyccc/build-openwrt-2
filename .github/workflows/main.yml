@@ -1,4 +1,4 @@
-name: Build-OpenWrt
+name: OpenWrt-x64_ACC-adg
 
 on:
   push:
