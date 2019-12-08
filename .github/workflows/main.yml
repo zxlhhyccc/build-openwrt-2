@@ -1,4 +1,4 @@
-name: OpenWrt-x64_Luci-adg
+name: OpenWrt-x64
 
 on:
   push:
