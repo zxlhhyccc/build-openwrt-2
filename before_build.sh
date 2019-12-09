@@ -25,8 +25,8 @@ git clone https://github.com/project-openwrt/luci-app-smartinfo package/mine/luc
 mv package/mine/luci-app-smartinfo/luci-dir/applications/luci-app-smartinfo package/mine/luci-app-smartinfo/
 
 # ssr-plus-jo
-git clone https://github.com/Ameykyl/luci-app-ssr-plus-jo.git package/mine/luci-app-ssr-plus-jo/luci-app-ssr-plus-jo
-git clone https://github.com/Ameykyl/my.git package/mine/luci-app-ssr-plus-jo/my
+# git clone https://github.com/Ameykyl/luci-app-ssr-plus-jo.git package/mine/luci-app-ssr-plus-jo/luci-app-ssr-plus-jo
+# git clone https://github.com/Ameykyl/my.git package/mine/luci-app-ssr-plus-jo/my
 
 # FileBrowser
 git clone https://github.com/project-openwrt/FileBrowser package/mine/FileBrowser
