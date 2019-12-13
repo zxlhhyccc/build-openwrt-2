@@ -40,6 +40,10 @@ jobs:
       run: |
         /bin/bash /home/runner/work/build-openwrt/build-openwrt/before_build.sh
         cp -fpR /home/runner/work/build-openwrt/build-openwrt/. /home/runner/openwrt/
+
+#    - name: SSH connection to Actions
+#      uses: csexton/debugger-action@master
+
     - name: Start Build
       run: | 
         cd /home/runner/openwrt
