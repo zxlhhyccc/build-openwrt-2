@@ -1,4 +1,4 @@
-name: Build-OpenWrt
+name: OpenWrt-x64
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
     - name: Clone source
       run: |
         cd /home/runner
-        git clone https://github.com/project-openwrt/openwrt.git
+        git clone https://github.com/coolsnowwolf/lede openwrt
         sudo chown -R runner:runner openwrt
         cd /home/runner/openwrt
         ./scripts/feeds update -a 
