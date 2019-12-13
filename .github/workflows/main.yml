@@ -4,10 +4,10 @@ on:
   push:
     branches: 
       - master
-#  schedule:
-#    - cron: 0 8 * * 5
-#  watch:
-#    types: [started]
+  schedule:
+    - cron: 0 0 * * 5
+  watch:
+    types: [started]
 
 jobs:
   build:
@@ -40,10 +40,6 @@ jobs:
       run: |
         /bin/bash /home/runner/work/build-openwrt/build-openwrt/before_build.sh
         cp -fpR /home/runner/work/build-openwrt/build-openwrt/. /home/runner/openwrt/
-
-#    - name: SSH connection to Actions
-#      uses: csexton/debugger-action@master
-
     - name: Start Build
       run: | 
         cd /home/runner/openwrt
