@@ -4,6 +4,8 @@ on:
   push:
     branches: 
       - master
+#  release:
+#    types: published
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -12,7 +14,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-18.04
-    
+    if: github.event.repository.owner.id == github.event.sender.id
+
     steps:
     - name: Clone Repository
       uses: actions/checkout@v1
@@ -21,6 +24,8 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
         docker rmi $(docker images -q)
+        sudo -E swapoff /swapfile
+        sudo -E rm -rf /swapfile /usr/share/dotnet /usr/local/lib/android /opt/ghc
         sudo -E apt-get remove -y --purge azure-cli ghc zulu* hhvm llvm* firefox google* dotnet* powershell openjdk* mysql* php*
         sudo -E apt-get update -y
         #sudo -E apt-get full-upgrade -y
