@@ -36,8 +36,9 @@ jobs:
         sudo -E apt-get autoremove -y --purge
         sudo -E apt-get clean -y
         sudo -E rm -rf /usr/share/dotnet /etc/mysql /etc/php /usr/local/lib/android /opt/ghc
-    - name: Clone source
+    - name: Clone Source
       run: |
+        cd /home/runner
         bash ${GITHUB_WORKSPACE}/clone_source.sh
         sudo chown -R runner:runner openwrt
     - name: Before Build
