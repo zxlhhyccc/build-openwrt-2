@@ -60,12 +60,12 @@ jobs:
       run: |
         /bin/bash /home/runner/openwrt/after_build.sh
     - name: Upload Packages
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v2
       with:
         name: Packages
         path: /home/runner/openwrt/bin/packages/
     - name: Upload Firmwares
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@v2
       with:
         name: Firmwares
         path: /home/runner/openwrt/bin/targets/
